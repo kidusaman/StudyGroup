@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Study Group Chat</title>
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
+</head>
+<body>
+    <h2>Real-Time Chat</h2>
+    <input type="text" id="messageInput" placeholder="Type a message..." />
+    <button onclick="sendMessage()">Send</button>
+    <ul id="chatMessages"></ul>
+
+    <script>
+        const socket = io("http://localhost:5001");
+
+        // ✅ Set up user credentials manually
+        const userId = 1; // Change this based on logged-in user
+        const groupId = 1; // Change this based on the study group
+
+        // ✅ Join the group chat
+        socket.emit("joinGroup", groupId);
+
+        // ✅ Listen for incoming messages
+        socket.on("receiveMessage", (data) => {
+            const li = document.createElement("li");
+            li.textContent = `${data.username}: ${data.message}`;
+            document.getElementById("chatMessages").appendChild(li);
+        });
+
+        // ✅ Send a message
+        function sendMessage() {
+            const message = document.getElementById("messageInput").value;
+            socket.emit("sendMessage", { groupId, userId, message });
+        }
+    </script>
+</body>
+</html>

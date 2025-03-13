@@ -57,19 +57,22 @@ A full-stack web application that enables students to ask and answer questions, 
    ```sh
    npm install
 3. Create a .env file in the root directory with the following variables:
-```ini
-PORT=5001
-DB_USER=your_db_user
-DB_HOST=your_db_host
-DB_NAME=your_db_name
-DB_PASS=your_db_password
-DB_PORT=5432
-JWT_SECRET=your_jwt_secret
-EMAIL_USER=your_email@example.com
-EMAIL_PASSWORD=your_email_password
-SMTP_HOST=smtp.gmail.com
-SMTP_PORT=587
-SMTP_SECURE=false
+3. Create a `.env` file in the root directory with the following variables:
+   ```ini
+   PORT=5001
+   DB_USER=your_db_user
+   DB_HOST=your_db_host
+   DB_NAME=your_db_name
+   DB_PASS=your_db_password
+   DB_PORT=5432
+   JWT_SECRET=your_jwt_secret
+
+   EMAIL_USER=your_email@example.com
+   EMAIL_PASSWORD=your_email_password
+   SMTP_HOST=smtp.gmail.com
+   SMTP_PORT=587
+   SMTP_SECURE=false
+
 4. Start the backend server:
   ```sh
  npm start

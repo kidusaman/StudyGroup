@@ -86,8 +86,8 @@ A full-stack web application that enables students to ask and answer questions, 
    ```sh
    npm install
 3. Create a .env file in the root directory with the following:
-```ini
-REACT_APP_API_URL=http://localhost:5001
+   ```ini
+   REACT_APP_API_URL=http://localhost:5001
 4. Start the frontend:
   ```sh
- npm start
+  npm start

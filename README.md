@@ -45,16 +45,18 @@ A full-stack web application that enables students to ask and answer questions, 
 - **Notifications:** React-Toastify integrated with Socket.io to display real-time notifications.
 - **Responsive Design:** Layout styled with React-Bootstrap and custom CSS for responsiveness.
 
+
 ## Installation
 
 ### Backend
 1. Clone the repository:
    ```sh
    git clone https://github.com/yourusername/peer-learning-backend.git
-   cd peer-learning-backendInstall dependencies:
-npm install
-Create a .env file in the root directory with the following variables:
-PORT=5001
+   cd peer-learning-backend
+2. Install dependencies:
+   npm install
+3. Create a .env file in the root directory with the following variables:
+   PORT=5001
 DB_USER=your_db_user
 DB_HOST=your_db_host
 DB_NAME=your_db_name
@@ -67,42 +69,5 @@ EMAIL_PASSWORD=your_email_password
 SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
 SMTP_SECURE=false
-Start the backend server:
-npm start
-Frontend
-Clone the repository:
-git clone https://github.com/yourusername/peer-learning-frontend.git
-cd peer-learning-frontend
-Install dependencies:
-npm install
-Create a .env file in the root directory with the following:
-REACT_APP_API_URL=http://localhost:5001
-Start the frontend:
-npm start
-Configuration
-
-Ensure that Node.js and PostgreSQL are installed.
-Modify .env files as needed for your setup.
-For email verification, configure SMTP settings properly.
-Usage
-
-Run both backend and frontend servers.
-Open the frontend in your browser.
-Sign up or log in.
-Ask and answer questions, join study groups, and chat in real time.
-Deployment
-
-Backend can be deployed using Heroku, Render, or Vercel.
-Frontend can be deployed on Netlify or Vercel.
-Update .env files with production values before deployment.
-Contributing
-
-Contributions are welcome! To contribute:
-Fork the repository.
-Create a new branch:
-git checkout -b feature-branch
-Commit changes:
-git commit -m "Added new feature"
-Push to the branch:
-git push origin feature-branch
-Create a Pull Request.
+4. Start the backend server:
+   npm start

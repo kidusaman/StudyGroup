@@ -72,10 +72,10 @@ A full-stack web application that enables students to ask and answer questions, 
    SMTP_HOST=smtp.gmail.com
    SMTP_PORT=587
    SMTP_SECURE=false
-
 4. Start the backend server:
-  ```sh
- npm start
+    ```sh
+   npm install
+
 ### Frontend
 
 1. Clone the repository:

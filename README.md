@@ -70,3 +70,21 @@ EMAIL_PASSWORD=your_email_password
 SMTP_HOST=smtp.gmail.com
 SMTP_PORT=587
 SMTP_SECURE=false
+4. Start the backend server:
+  ```sh
+ npm start
+### Frontend
+
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/yourusername/peer-learning-frontend.git
+   cd peer-learning-frontend
+2. Install dependencies:
+   ```sh
+   npm install
+3. Create a .env file in the root directory with the following:
+```ini
+REACT_APP_API_URL=http://localhost:5001
+4. Start the frontend:
+  ```sh
+ npm start
